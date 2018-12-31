@@ -2,7 +2,7 @@
 
 
 ## Environment
-========
+
 + ubuntu14.04(other system is ok), x86_64, 2.2GHCPU
 
 + install flex bison(in ubuntu you can "sudo apt-get install flex bison")
@@ -18,7 +18,6 @@
 
 
 ## Table Results
-==========
 
 We list the result of  t2lp+claspD and t2lp+dlv on two problems
 
@@ -32,7 +31,7 @@ qsat problem
 
 
 ## Code
-==========
+
 t2lp/include/  ----------------------some header file
 
 t2lp/parse/    ----------------------lex and yacc file
@@ -47,7 +46,7 @@ testSH/*  ----------------------additional result, such as examine time, random 
 
 
 ## Code details simple version
-============
+
 1. Lexical analysis, syntax analysis, and store the input formula in the Formula class
 
 2. Split the entire formula in Formula into sub formulas and put them into Formulas(made by bidirectional list deque)
@@ -64,7 +63,7 @@ testSH/*  ----------------------additional result, such as examine time, random 
 
 
 ## Code details complex version
-============
+
 ###  Lexical analysis and syntax analysis,
 
 
@@ -247,14 +246,13 @@ true & (b & a)
 
 
 ## Compile
-==========
 
 + modify the root path in t2lp/CmakeList.txt
 + cmake CmakeList.txt
 + make
 
 ## Run & Test
-===========
+
 clique problem
 + ./t2lp test/color.in  test/color.out
 + gringo test/color.fact  test/color.out | claspD 0
@@ -298,7 +296,7 @@ Minimal set problem
 
 
 ## Random test
-==========
+
 you should be in testSh folder
 
 clique problem in color folder
@@ -315,7 +313,6 @@ qsat problem in qsat folder
 
 
 ## Experiment
-==========
 
 you should be in testSh folder
 
